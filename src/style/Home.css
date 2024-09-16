@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  padding: 10px 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 24px;
+}
+
+/* ul li a:active {
+  color: #007bff;
+} */
+.link-home {
+  text-decoration: underline;
+}

@@ -1,0 +1,21 @@
+.banner-container {
+  border-radius: 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../assets/images/img-banner.png") no-repeat center;
+  object-fit: cover;
+  max-width: 1240px;
+  height: 223px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  color: white;
+  font-weight: 700;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: auto;
+  gap: 20px;
+}
+
+.content-banner {
+  filter: drop-shadow(0 0 0.5rem black);
+}
