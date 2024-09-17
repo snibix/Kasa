@@ -14,6 +14,7 @@ function Home() {
           <Banner />
         </div>
       </header>
+
       <Card />
 
       <Footer />
