@@ -1,9 +1,17 @@
+import React from "react";
 import "../../style/Banner.css";
 
-function Banner() {
+function Banner({ imgBanner, withGradient = true, className = "", content }) {
+  const bannerStyle = {
+    background: withGradient
+      ? `linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${imgBanner})`
+      : `url(${imgBanner})`,
+    backgroundSize: `cover`,
+    backgroundPosition: `center`,
+  };
   return (
-    <div className="banner-container">
-      <div className="content-banner">Chez vous, partout et ailleurs</div>
+    <div className={`banner-container ${className}`} style={bannerStyle}>
+      <div className="content-banner">{content}</div>
     </div>
   );
 }

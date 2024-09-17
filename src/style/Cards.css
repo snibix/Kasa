@@ -16,8 +16,8 @@
     rgba(0, 0, 0, 0.5) 100%
   );
   background-color: rgba(255, 96, 96, 2);
-  width: 340px;
-  height: 340px;
+  min-width: 340px;
+  min-height: 340px;
   color: white;
   z-index: 5;
   border-radius: 15px;
