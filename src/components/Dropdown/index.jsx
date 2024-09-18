@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../../style/Dropdown.css";
+import icon from "../../assets/icons/Vector.png";
 
 function Dropdown({ options, onSelect, placeholder = "Select" }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,9 +13,10 @@ function Dropdown({ options, onSelect, placeholder = "Select" }) {
     if (onSelect) onSelect(option); // Appel de la fonction de rappel si elle est fournie
   };
   return (
-    <div className="dropdown-container">
+    <div className="dropdown">
       <button className="dropdown-button" onClick={toggleDropdown}>
         {selecedOption ? selecedOption.label : placeholder}
+        <img src={icon}></img>
       </button>
       {isOpen && (
         <div className="dropdown-menu">

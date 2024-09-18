@@ -4,11 +4,13 @@ import logo from "../../assets/logo/logo.png";
 
 function Header() {
   return (
-    <header>
+    <div className="header-container">
       <div className="header">
-        <div className="header-container">
+        <div>
           <img src={logo} alt="Site Logo" className="logo" />{" "}
           {/* Logo du site */}
+        </div>
+        <div>
           <nav>
             <ul>
               <li>
@@ -21,11 +23,15 @@ function Header() {
                 <Link to="/about">À propos</Link>{" "}
                 {/* Lien vers la page À propos */}
               </li>
+              <li>
+                <Link to="/error">Error</Link>{" "}
+                {/* Lien vers la page À propos */}
+              </li>
             </ul>
           </nav>
         </div>
       </div>
-    </header>
+    </div>
   );
 }
 

@@ -1,8 +1,3 @@
-body {
-  margin: 0;
-  padding: 0;
-  border-box: border-box;
-}
 .banner-container {
   border-radius: 20px;
   max-width: 1240px;
@@ -19,9 +14,4 @@ body {
 
 .content-banner {
   filter: drop-shadow(0 0 0.5rem black);
-}
-
-.banner-about {
-  width: 1240px;
-  margin: auto;
 }

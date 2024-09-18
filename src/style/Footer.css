@@ -1,3 +1,6 @@
+.container-footer {
+  position: relative;
+}
 .footer {
   background-color: black;
   height: 209px;
@@ -7,6 +10,7 @@
   justify-content: center;
   align-items: center;
   color: white;
+  bottom: 0;
 }
 
 .footer img {

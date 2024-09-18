@@ -3,25 +3,24 @@ import Banner from "../../components/Banner";
 import Footer from "../../components/Footer";
 import Card from "../../components/Card";
 import bg from "../../assets/images/img-home.png";
-import "../../style/Home.css";
+import "../../style/Header.css";
 import "../../style/Footer.css";
 
 function Home() {
   return (
     <div className="App">
-      <header className="header">
-        <Header />
-        <div className="banner">
-          <Banner
-            imgBanner={bg}
-            withGradient={true}
-            content={"Chez vous, partout et ailleurs"}
-          />
+      <div className="content">
+        <div className="header">
+          <Header />
         </div>
-      </header>
+        <Banner
+          imgBanner={bg}
+          withGradient={true}
+          content={"Chez vous, partout et ailleurs"}
+        />
 
-      <Card />
-
+        <Card />
+      </div>
       <Footer />
     </div>
   );
