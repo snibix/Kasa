@@ -1,0 +1,24 @@
+.content-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner-logement {
+  margin: 15px auto;
+  height: 415px;
+}
+.container-logement {
+  max-width: 1240px;
+  margin: auto;
+}
+.fiche-dropdown {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dropdown {
+  min-width: 0;
+}
+.dropdown-button {
+  min-width: 582px;
+}
