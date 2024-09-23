@@ -1,4 +1,4 @@
-.content-name {
+.content-logement {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,6 +11,18 @@
   max-width: 1240px;
   margin: auto;
 }
+.fiche-title h3 {
+  font-size: 36px;
+  color: #ff6060;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.fiche-title p {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 10px 0 35px 0;
+}
 .fiche-dropdown {
   display: flex;
   justify-content: space-between;
@@ -21,4 +33,45 @@
 }
 .dropdown-button {
   min-width: 582px;
+}
+.content-name {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.content-name p {
+  width: 93px;
+  padding: 10px;
+  font-size: 22px;
+  color: #ff6060;
+  font-weight: 500;
+  text-align: right;
+}
+.img-user {
+  background: gray;
+  width: 64px;
+  height: 64px;
+  border-radius: 50px;
+}
+.tags {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+.tag {
+  background-color: #ff6060;
+  width: 120px;
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+}
+.tag-content {
+  font-size: 17px;
+  padding: 5px 0;
+}
+.content-notation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
 }
