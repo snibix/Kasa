@@ -27,10 +27,6 @@ function Header() {
                 <Link to="/error">Error</Link>{" "}
                 
               </li> */}
-              <li>
-                <Link to="/logement">Logements</Link>{" "}
-                {/* Lien vers la page À propos */}
-              </li>
             </ul>
           </nav>
         </div>

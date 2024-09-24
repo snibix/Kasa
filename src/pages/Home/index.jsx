@@ -1,12 +1,21 @@
 import Header from "../../components/Header";
 import Banner from "../../components/Banner";
 import Footer from "../../components/Footer";
-import Card from "../../components/Card";
+import Cards from "../../components/Cards";
+import data from "../../data/data.json";
+
 import bg from "../../assets/images/img-home.png";
 import "../../style/Header.css";
 import "../../style/Footer.css";
+import { useState } from "react";
 
 function Home() {
+  const [logements] = useState(data);
+
+  if (!logements || !Array.isArray(logements)) {
+    return <p>Chargement des données...</p>;
+  }
+
   return (
     <div className="App">
       <div className="content">
@@ -18,8 +27,7 @@ function Home() {
           withGradient={true}
           content={"Chez vous, partout et ailleurs"}
         />
-
-        <Card />
+        <Cards logements={logements} />{" "}
       </div>
       <Footer />
     </div>

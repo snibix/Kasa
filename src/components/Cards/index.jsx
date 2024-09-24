@@ -1,18 +1,23 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+
 import "../../style/Cards.css";
-function Cards() {
-  const cardsData = [
-    { id: 1, title: "Titre de la location" },
-    { id: 2, title: "Titre de la location" },
-    { id: 3, title: "Titre de la location" },
-    { id: 4, title: "Titre de la location" },
-    { id: 5, title: "Titre de la location" },
-    { id: 6, title: "Titre de la location" },
-  ];
+
+function Cards({ logements }) {
+  const navigate = useNavigate();
+
+  const handleCardClick = (id) => {
+    navigate(`/logement/${id}`);
+  };
+
   return (
     <div className="cards-container">
-      {cardsData.map((card) => (
-        <div className="cards" key={card.id}>
+      {logements.map((card) => (
+        <div
+          className="cards"
+          key={card.id}
+          onClick={() => handleCardClick(card.id)}
+        >
           <h2 className="title-cards">{card.title}</h2>
         </div>
       ))}
