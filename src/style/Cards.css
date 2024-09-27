@@ -38,3 +38,16 @@
   font-weight: 700;
   padding: 5px 30px;
 }
+
+@media (max-width: 830px) {
+  .cards-container {
+    flex-direction: column;
+    width: 95%;
+    background-color: white;
+    padding: 0;
+    margin: 25px auto;
+  }
+  .cards-container .cards {
+    width: 100%;
+  }
+}

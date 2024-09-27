@@ -15,3 +15,16 @@
 .content-banner {
   filter: drop-shadow(0 0 0.5rem black);
 }
+
+@media (max-width: 820px) {
+  .banner-container {
+    width: 95%;
+    justify-content: start;
+    height: 151px;
+  }
+  .content-banner {
+    font-size: 24px;
+    width: 225px;
+    padding: 10px;
+  }
+}

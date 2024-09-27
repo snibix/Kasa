@@ -19,9 +19,7 @@ function Home() {
   return (
     <div className="App">
       <div className="content">
-        <div className="header">
-          <Header />
-        </div>
+        <Header />
         <Banner
           imgBanner={bg}
           withGradient={true}
