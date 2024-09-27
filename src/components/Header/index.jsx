@@ -25,7 +25,6 @@ function Header() {
               </li>
               {/* <li>
                 <Link to="/error">Error</Link>{" "}
-                
               </li> */}
             </ul>
           </nav>

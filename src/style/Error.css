@@ -27,3 +27,24 @@
   color: black;
   font-weight: 500;
 }
+
+@media (max-width: 820px) {
+  .error-message {
+    font-size: 150px;
+    width: 198px;
+    height: 99px;
+  }
+  .message-oups {
+    font-size: 32px;
+    width: 312px;
+
+    font-weight: 500;
+  }
+  .back {
+    font-size: 20px;
+  }
+  .main {
+    margin-top: 25px;
+    gap: 200px;
+  }
+}

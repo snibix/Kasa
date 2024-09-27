@@ -17,9 +17,8 @@ function About() {
   return (
     <div className="App">
       <div className="content">
-        <div className="header">
-          <Header />
-        </div>
+        <Header />
+
         <Banner
           imgBanner={bg}
           withGradient={true}
@@ -27,6 +26,7 @@ function About() {
           gradient="linear-gradient(to right, rgba(0, 0, 0, 1), rgba(255, 255, 0, 0.8))"
           content={""}
         />
+
         <div className="dropdown-container">
           <Dropdown
             options={dropdownOption}

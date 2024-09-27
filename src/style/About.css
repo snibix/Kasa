@@ -6,3 +6,18 @@
 .content {
   flex: 1;
 }
+
+.dropdown-button {
+  max-width: 1240px;
+  margin: auto;
+}
+
+.dropdown-button {
+  width: 100%;
+}
+
+@media (max-width: 820px) {
+  .dropdown-button {
+    width: 95%;
+  }
+}

@@ -8,9 +8,8 @@ function Error() {
   return (
     <div className="App">
       <div className="content">
-        <header className="header">
-          <Header />
-        </header>
+        <Header />
+
         <div className="main">
           <p className="error-message">404</p>
 
