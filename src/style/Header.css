@@ -34,7 +34,10 @@ ul li a {
 }
 
 @media (max-width: 820px) {
-  .header-container {
-    width: 90%;
+  .header {
+    padding: 0 15px;
+  }
+  .header-container .logo {
+    font-size: 15px;
   }
 }
