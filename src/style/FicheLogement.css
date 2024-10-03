@@ -16,6 +16,8 @@
   flex-direction: column;
   max-width: 1240px;
   margin: auto;
+  padding: 15px 0 100px 0;
+  box-sizing: border-box;
 }
 .fiche-title h3 {
   font-size: 36px;
@@ -34,10 +36,23 @@
   justify-content: space-between;
 }
 
-.dropdown {
-  min-width: 582px;
+.fiche-dropdown button {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  width: 500px;
+  margin: auto;
+  background-color: #ff6060;
+  border: 0;
+  border-radius: 10px;
+  color: white;
 }
-
+.dropdown {
+  min-width: 0;
+}
+.dropdown-content {
+  width: 480px;
+}
 .content-name {
   display: flex;
   flex-direction: column;
@@ -69,14 +84,14 @@
 }
 .tag {
   background-color: #ff6060;
-  width: 120px;
+  width: 190px;
   border-radius: 15px;
   color: white;
   text-align: center;
 }
 .tag-content {
   font-size: 17px;
-  padding: 5px 0;
+  padding: 5px 15px;
 }
 .notation {
   display: flex;

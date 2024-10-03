@@ -48,21 +48,26 @@ function FicheLogement() {
             <div className="content-name">
               <div className="user">
                 <p>{logement.host.name}</p>
-                <div className="img-user">
-                  <img src={logement.host.picture} alt={logement.host.name} />
+                <div className="">
+                  <img
+                    className="img-user"
+                    src={logement.host.picture}
+                    alt={logement.host.name}
+                  />
                 </div>
               </div>
               <div className="stars">
-                <Rating rating={logement.rating} />
+                <Rating initialRating={logement.rating} />
               </div>
             </div>
           </div>
           <div className="fiche-dropdown">
-            <Dropdown className="dropdown-logement" placeholder="Description">
-              <p>{logement.description}</p>
+            <Dropdown placeholder="Description">
+              <p className="dropdown-contents">{logement.description}</p>
             </Dropdown>
+
             <Dropdown placeholder="Équipements">
-              <ul>
+              <ul className="dropdown-contents">
                 {logement.equipments.map((equipment, index) => (
                   <li key={index}>{equipment}</li>
                 ))}
