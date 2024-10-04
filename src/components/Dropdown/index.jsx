@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import "../../style/Dropdown.css";
 import icon from "../../assets/icons/Vector.png";
 
-function Dropdown({ children, placeholder = "Select" }) {
+function Dropdown({ children, placeholder = "Select", className = "" }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleDropdown = () => setIsOpen(!isOpen);
 
   return (
-    <div className="dropdown">
+    <div className={className}>
       <button className="dropdown-buttons" onClick={toggleDropdown}>
         {placeholder}
         <img src={icon} alt="" />

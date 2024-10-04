@@ -41,6 +41,7 @@
   justify-content: space-between;
   padding: 15px;
   width: 500px;
+  max-width: 500px;
   margin: auto;
   background-color: #ff6060;
   border: 0;
@@ -51,13 +52,13 @@
   min-width: 0;
 }
 .dropdown-content {
-  width: 480px;
+  max-width: 500px;
 }
 .content-name {
   display: flex;
   flex-direction: column;
 }
-
+/** TERMINER LE RESPONSIVE MOBILE FICHE LOGEMENT AVEC LES DROPDOWN ET FAIRE LES DROPDOWN PAGE ABOUT PUIS VOIR POUR LES ANIMATIONS ECT**/
 .user {
   display: flex;
   justify-content: center;
@@ -99,6 +100,13 @@
   align-items: center;
 }
 
+@media (max-width: 1050px) {
+  .fiche-dropdown {
+    flex-direction: column;
+    gap: 25px;
+    padding: 20px;
+  }
+}
 @media (max-width: 820px) {
   .content-logements {
     width: 100%;
@@ -118,11 +126,11 @@
   .content-infos {
     width: 100%;
   }
-  .fiche-dropdown {
+  /* .fiche-dropdown {
     flex-direction: column;
     gap: 25px;
     padding-bottom: 30px;
-  }
+  } */
   .dropdown-button {
     width: 100%;
   }

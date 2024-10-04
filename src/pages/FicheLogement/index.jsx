@@ -21,7 +21,7 @@ function FicheLogement() {
 
   return (
     <div className="App">
-      <div className="content">
+      <div className="content log-page">
         <Header />
         <Banner
           imgBanner={logement.pictures[0]} // Image principale du logement
