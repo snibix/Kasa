@@ -7,8 +7,7 @@ import Banner from "../../components/Banner";
 import Tag from "../../components/Tag";
 import Rating from "../../components/Rating";
 
-import "../../style/FicheLogement.css";
-import bg from "../../assets/images/img-logement.png";
+// import bg from "../../assets/images/img-logement.png";
 import Dropdown from "../../components/Dropdown";
 
 function FicheLogement() {

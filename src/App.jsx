@@ -6,7 +6,7 @@ import About from "./pages/About";
 import Error from "./pages/Error";
 import FicheLogement from "./pages/FicheLogement";
 
-import "./style/index.css";
+import "./scss/main.scss";
 function App() {
   return (
     <Router>

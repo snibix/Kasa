@@ -5,8 +5,6 @@ import Cards from "../../components/Cards";
 import data from "../../data/data.json";
 
 import bg from "../../assets/images/img-home.png";
-import "../../style/Header.css";
-import "../../style/Footer.css";
 import { useState } from "react";
 
 function Home() {

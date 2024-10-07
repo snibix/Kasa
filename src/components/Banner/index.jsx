@@ -1,5 +1,4 @@
 import React from "react";
-import "../../style/Banner.css";
 
 function Banner({ imgBanner, withGradient = true, className = "", content }) {
   const bannerStyle = {

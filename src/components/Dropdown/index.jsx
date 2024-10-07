@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "../../style/Dropdown.css";
 import icon from "../../assets/icons/Vector.png";
 
 function Dropdown({ children, placeholder = "Select", className = "" }) {

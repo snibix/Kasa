@@ -1,0 +1,21 @@
+@import "../abstracts/_variables.scss";
+.title {
+  font-family: "Anton", sans-serif;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #ededed;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.filtered {
+  display: none !important;
+}

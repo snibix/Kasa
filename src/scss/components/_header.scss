@@ -37,7 +37,12 @@ ul li a {
   .header {
     padding: 0 15px;
   }
+  .header ul {
+    gap: 20px;
+    align-items: center;
+  }
   .header-container .logo {
-    font-size: 15px;
+    font-size: 10px;
+    height: 50px;
   }
 }

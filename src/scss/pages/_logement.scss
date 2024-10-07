@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 20px;
 }
 .banner-logement {
   margin: 15px auto;
@@ -126,13 +127,15 @@
   .content-infos {
     width: 100%;
   }
-  /* .fiche-dropdown {
-    flex-direction: column;
-    gap: 25px;
-    padding-bottom: 30px;
-  } */
+
   .dropdown-button {
     width: 100%;
+  }
+  .fiche-dropdown {
+    padding: 0 15px 15px 0;
+  }
+  .fiche-dropdown button {
+    width: 0;
   }
   .fiche-title p {
     margin-bottom: 0;

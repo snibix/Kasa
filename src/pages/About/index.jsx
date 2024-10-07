@@ -4,9 +4,6 @@ import Banner from "../../components/Banner/index";
 import Footer from "../../components/Footer/index";
 import bg from "../../assets/images/about.jpg";
 import Dropdown from "../../components/Dropdown";
-import "../../style/Banner.css";
-import "../../style/About.css";
-import "../../style/Header.css";
 
 const dropdownOption = [
   {
@@ -36,10 +33,6 @@ const dropdownOption = [
 ];
 
 function About() {
-  const handleSelect = (dropdownOption) => {
-    console.log("selected option", dropdownOption);
-  };
-
   return (
     <div className="App">
       <div className="content about-page">
@@ -60,7 +53,7 @@ function About() {
               className="dropdown-about"
               placeholder={option.label}
             >
-              {option.content} {/* Contenu passé comme children */}
+              {option.content}
             </Dropdown>
           ))}
         </div>
