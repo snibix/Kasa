@@ -19,7 +19,7 @@ function Home() {
       <div className="content">
         <Header />
         <Banner
-          imgBanner={bg}
+          imgBanner={[bg]}
           withGradient={true}
           content={"Chez vous, partout et ailleurs"}
         />

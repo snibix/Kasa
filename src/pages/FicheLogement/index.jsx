@@ -7,7 +7,6 @@ import Banner from "../../components/Banner";
 import Tag from "../../components/Tag";
 import Rating from "../../components/Rating";
 
-// import bg from "../../assets/images/img-logement.png";
 import Dropdown from "../../components/Dropdown";
 
 function FicheLogement() {
@@ -23,7 +22,7 @@ function FicheLogement() {
       <div className="content log-page">
         <Header />
         <Banner
-          imgBanner={logement.pictures[0]} // Image principale du logement
+          imgBanner={logement.pictures}
           withGradient={false}
           className="banner-logement"
         />
