@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import icon from "../../assets/icons/Vector.png";
+import iconOpen from "../../assets/icons/Vector.png";
+import iconClose from "../../assets/icons/arrow-back.png";
 
 function Dropdown({ children, placeholder = "Select", className = "" }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,11 +9,16 @@ function Dropdown({ children, placeholder = "Select", className = "" }) {
 
   return (
     <div className={className}>
-      <button className="dropdown-buttons" onClick={toggleDropdown}>
+      <button
+        className={`dropdown-buttons ${isOpen ? "open" : ""}`}
+        onClick={toggleDropdown}
+      >
         {placeholder}
-        <img src={icon} alt="" />
+        <img src={isOpen ? iconClose : iconOpen} alt="Toggle Dropdown" />
       </button>
-      {isOpen && <div className="dropdown-content">{children}</div>}
+      <div className={`dropdown-content ${isOpen ? "open" : ""}`}>
+        {children}
+      </div>
     </div>
   );
 }

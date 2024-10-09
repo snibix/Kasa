@@ -26,7 +26,6 @@ function Banner({
       ? `linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${imgBanner[currentIndex]})`
       : `url(${imgBanner[currentIndex]})`,
     backgroundSize: `cover`,
-    backgroundPosition: `left`,
   };
 
   return (

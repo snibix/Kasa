@@ -56,13 +56,22 @@
   padding: 0 0 0 10px;
   gap: 10px;
 }
+
+.dropdown-buttons {
+  cursor: pointer;
+}
+
+.dropdown-buttons.open {
+  border-radius: 10px 10px 0 0;
+  border: 0;
+}
 .log-page .dropdown-content {
   width: 100%;
-  background-color: #f6f6f673;
+  background-color: #f6f6f6;
   padding: 10px;
   border: 1px solid #ddd;
-  border-radius: 5px;
-  margin: auto;
+  border-radius: 0 0 10px 10px;
+  margin-top: 0;
 }
 
 .about-page .dropdown-content {

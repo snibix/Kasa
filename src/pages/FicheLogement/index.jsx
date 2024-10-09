@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import data from "../../data/data.json";
 
 import Header from "../../components/Header";
@@ -14,7 +14,7 @@ function FicheLogement() {
   const logement = data.find((item) => item.id === id); // Trouver le logement correspondant
 
   if (!logement) {
-    return <div>Logement non trouvé</div>; // Gérer le cas où le logement n'est pas trouvé
+    return <Navigate to="/erreur" />; // Gérer le cas où le logement n'est pas trouvé
   }
 
   return (
