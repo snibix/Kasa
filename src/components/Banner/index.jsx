@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import arrowLeft from "../../assets/icons/arrow-left.png";
 import arrowRight from "../../assets/icons/arrow-right.png";
+
 function Banner({
   imgBanner = [],
   withGradient = true,
@@ -22,10 +23,11 @@ function Banner({
   };
 
   const bannerStyle = {
-    background: withGradient
+    backgroundImage: withGradient
       ? `linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${imgBanner[currentIndex]})`
       : `url(${imgBanner[currentIndex]})`,
-    backgroundSize: `cover`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
   };
 
   return (
@@ -34,15 +36,20 @@ function Banner({
         <>
           <div className="container-arrow">
             <button onClick={prevImage}>
-              <img className="arrow" src={arrowLeft} alt=""></img>
+              <img className="arrow" src={arrowLeft} alt="Précédent"></img>
             </button>
             <button onClick={nextImage}>
-              <img className="arrow" src={arrowRight} alt=""></img>
+              <img className="arrow" src={arrowRight} alt="Suivant"></img>
             </button>
           </div>
         </>
       )}
       <div className="content-banner">{content}</div>
+      {imgBanner.length > 1 && (
+        <div className="image-counter">
+          {currentIndex + 1} / {imgBanner.length}
+        </div>
+      )}
     </div>
   );
 }

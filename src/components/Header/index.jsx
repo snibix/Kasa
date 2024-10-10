@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from "../../assets/logo/logo.png";
 
 function Header() {
@@ -7,25 +7,28 @@ function Header() {
     <div className="header-container">
       <div className="header">
         <div>
-          <img src={logo} alt="Site Logo" className="logo" />{" "}
-          {/* Logo du site */}
+          <img src={logo} alt="Site Logo" className="logo" />
         </div>
         <div>
           <nav>
             <ul>
               <li>
-                <Link to="/" className="link-home">
+                <NavLink
+                  to="/"
+                  end
+                  className={({ isActive }) => (isActive ? "active-link" : "")}
+                >
                   Accueil
-                </Link>{" "}
-                {/* Lien vers la page d'accueil */}
+                </NavLink>
               </li>
               <li>
-                <Link to="/about">À propos</Link>{" "}
-                {/* Lien vers la page À propos */}
+                <NavLink
+                  to="/about"
+                  className={({ isActive }) => (isActive ? "active-link" : "")}
+                >
+                  À propos
+                </NavLink>
               </li>
-              {/* <li>
-                <Link to="/error">Error</Link>{" "}
-              </li> */}
             </ul>
           </nav>
         </div>

@@ -28,11 +28,10 @@ ul li a {
   color: #333;
   font-size: 24px;
 }
-
-.link-home {
+.header-container nav ul li a.active-link {
   text-decoration: underline;
+  color: #000;
 }
-
 @media (max-width: 820px) {
   .header {
     padding: 0 15px;

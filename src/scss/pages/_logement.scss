@@ -10,25 +10,40 @@
 }
 
 .container-arrow {
-  width: 1240px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  position: absolute; /* Positionnement absolu par rapport à .banner-container */
+  top: 50%; /* Centre verticalement */
+  width: 100%; /* Prend toute la largeur du conteneur */
+  display: flex; /* Flexbox pour aligner les flèches */
+  justify-content: space-between; /* Espacement entre les flèches */
+  transform: translateY(-50%); /* Centre parfaitement verticalement */
 }
 
 .container-arrow img {
-  height: auto;
+  width: 60px; /* Largeur fixe pour les flèches */
+  height: auto; /* Garde les proportions */
 }
-
 .arrow {
   width: 60px;
   height: auto;
   padding: 0 10px;
 }
 .container-arrow button {
-  border: 0;
-  background: transparent;
-  cursor: pointer;
+  border: 0; /* Pas de bordure */
+  background: transparent; /* Fond transparent */
+  cursor: pointer; /* Curseur indiquant un élément cliquable */
+}
+.image-counter {
+  position: absolute; /* Positionne le compteur par rapport au conteneur */
+  bottom: 0; /* Centre verticalement */
+  left: 50%; /* Centre horizontalement */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Ajuste la position pour centrer parfaitement */
+  color: white; /* Couleur du texte */
+  font-size: 20px; /* Taille de la police */
+  padding: 5px 10px; /* Espacement autour du texte */
+  border-radius: 5px; /* Coins arrondis */
 }
 
 .container-logement {
