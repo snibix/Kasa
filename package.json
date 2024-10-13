@@ -36,9 +36,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://snibix.github.io/Kasa",
-  "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-  }
+  "homepage": "https://snibix.github.io/Kasa/home"
 }
