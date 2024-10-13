@@ -8,6 +8,9 @@
 }
 .dropdowns-about {
   margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 .dropdown-about {
   width: 100%;
@@ -24,4 +27,14 @@
 .dropdown-aboutchil .dropdown-about .dropdown-buttons {
   width: 100%;
   max-width: 100px;
+}
+@media (max-width: 820px) {
+  .dropdowns-about {
+    padding: 0 15px;
+    gap: 0;
+  }
+  .dropdown-about {
+    max-width: 500px;
+    width: 100%;
+  }
 }

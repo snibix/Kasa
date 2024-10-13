@@ -15,6 +15,7 @@ function Cards({ logements }) {
           className="cards"
           key={card.id}
           onClick={() => handleCardClick(card.id)}
+          style={{ backgroundImage: `url(${card.cover})` }}
         >
           <h2 className="title-cards">{card.title}</h2>
         </div>
