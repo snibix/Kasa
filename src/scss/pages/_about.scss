@@ -6,19 +6,22 @@
 .content {
   flex: 1;
 }
+.dropdowns-about {
+  margin-top: 50px;
+}
 .dropdown-about {
   width: 100%;
   max-width: 1000px;
   margin: auto;
   display: flex;
   flex-direction: column;
-  padding: 15px;
+  padding: 0;
   border: 0;
   border-radius: 10px;
   color: white;
+  font-family: "Monserrat", sans-serif;
 }
-
-.dropdown-about .dropdown-buttons {
+.dropdown-aboutchil .dropdown-about .dropdown-buttons {
   width: 100%;
   max-width: 100px;
 }
